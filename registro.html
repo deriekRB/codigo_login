@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de usuario</title>
+</head>
+<body>
+
+
+    
+    <h2>Formulario  de registro de usuario</h2>
+
+    <form action="registro.php" method="post">
+
+        Nombre: 
+        <input type="text" name="Nombres" id="Nombres" required><br><br>
+        
+        Apellido: 
+        <input type="text" name="Apellidos" id="Apellidos" required><br><br>
+        
+        Email:
+        <input type="email" name="Email" id="Email" required><br><br>
+        
+        Genero:
+        <select name="Genero" id="Genero">
+            <option value="">Seleccione Genero:</option><br>
+            <option value="Masculino">Hombre</option><br>
+            <option value="Femenino">Mujer</option><br>
+        
+        </select><br><br>
+
+        Nivel Academico:
+        <select name="Nivel_Academico" id="Nivel_Academico">
+            <option value="">Selecione Nivel Academico:</option>
+            <option value="Bachillerato">Bachillerato</option><br>
+            <option value="Tecnico Superior">Técnico Superior</option><br>
+            <option value="Universitario">Maestría</option><br>
+            <option value="Doctorado">Doctorado</option><br>
+        </select><br>
+        <br>
+
+        Contraseña:
+
+        <input type="password" name="Contraseña" id="Contraseña"><br><br>
+        
+        Repetir contraseña:
+        <input type="password" name="Confirmar_contraseña" id="Confirmar_contraseña"><br><br>
+
+        <button type="submit">Registrarme</button>
+
+
+    </form>
+
+    
+</body>
+</html>
